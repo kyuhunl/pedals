@@ -93,3 +93,25 @@ footer p { margin-bottom: 8px; }
   .feature .phone, .feature.flip .phone { order: 0; max-width: 220px; margin: 0 auto; }
 }
 @media (prefers-reduced-motion: reduce) { .button { transition: none; } }
+
+/* Scan-to-unlock flow: three drawn steps instead of a screenshot. */
+.flow { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; padding: 56px 0; border-top: 1px solid var(--line); }
+.flow p { max-width: 30em; }
+.flow-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.flow-steps li {
+  display: grid; grid-template-columns: 48px 1fr; grid-template-rows: auto auto; column-gap: 16px;
+  align-items: center; padding: 14px 18px; border: 1px solid var(--line); border-radius: 14px; margin: 0;
+}
+.flow-steps li + li { position: relative; }
+.flow-steps li + li::before {
+  content: ""; position: absolute; left: 41px; top: -15px; height: 14px; width: 1px; background: var(--line);
+}
+.flow-steps svg {
+  grid-row: span 2; width: 44px; height: 44px; padding: 8px; border-radius: 12px; background: var(--soft);
+  fill: none; stroke: var(--accent); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+}
+.flow-steps strong { line-height: 1.3; }
+.flow-steps span { color: var(--muted); font-size: 14px; line-height: 1.4; }
+@media (max-width: 760px) {
+  .flow { grid-template-columns: 1fr; gap: 28px; padding: 44px 0; }
+}
