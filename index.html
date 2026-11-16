@@ -8,30 +8,67 @@
 <link rel="icon" href="icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home">
 <main>
 <header><img src="icon.png" alt=""><a href="./">Pedals</a></header>
-<h1>Remember which bikes ride well.</h1>
-<p>Pedals is a private journal for New York bike share riders. Scan a bike’s QR code to see how it rode before, rate it when you dock, and over time you’ll know which bikes to take and which to skip.</p>
-<ul>
-<li>Scan any bike to see your past rating and notes.</li>
-<li>Rate rides in seconds: stars, a few tags, an optional note.</li>
-<li>See live classic and e-bike counts and open docks on the map.</li>
-<li>Label stations Home and Work, and get a heads-up when your destination has no open docks.</li>
-<li>Your journal stays on your phone. No account, no ads, no tracking.</li>
-</ul>
-<h2 id="android">Test Pedals on Android</h2>
-<p>Pedals for Android is in a closed test before its public release. To join, use your Android phone and the Google account you use for the Play Store:</p>
-<ol>
-<li>Join the tester group: <a href="https://groups.google.com/g/pedals-tester">groups.google.com/g/pedals-tester</a>.</li>
-<li>Open the test page and tap <strong>Become a tester</strong>: <a href="https://play.google.com/apps/testing/app.cytybyke.journal">play.google.com/apps/testing/app.cytybyke.journal</a>.</li>
-<li>Install Pedals from the Play Store link on that page. It can take a few minutes to appear after you join.</li>
-<li>Keep it installed for at least 14 days. Using it on a ride or two is plenty.</li>
-</ol>
-<p>Found a bug? Email <a href="mailto:pedals@kyuhunl.ee">pedals@kyuhunl.ee</a>, and attach the file from Settings → Save troubleshooting log.</p>
 
-<p><a href="support.html">Help and feedback</a> · <a href="privacy.html">Privacy policy</a></p>
-<footer class="muted">Pedals is an independent app. It isn’t affiliated with or endorsed by Citi Bike, Lyft or Motivate. Citi Bike is a trademark of its owners.</footer>
+<section class="hero">
+  <div class="hero-text">
+    <h1>Remember which bikes ride well.</h1>
+    <p class="lead">Pedals is a private journal for New York bike share riders. Scan a bike’s QR code to see how it rode before, rate it when you dock, and over time you’ll know which bikes to take and which to skip.</p>
+    <div class="actions">
+      <a class="button" href="#android">Test on Android</a>
+      <span class="status">iPhone: coming soon to the App Store</span>
+    </div>
+  </div>
+  <figure class="phone hero-phone"><img src="img/map.jpg" width="600" height="1304" alt="The Pedals map: live classic and e-bike counts at stations near Union Square, with Home and Work shortcuts."></figure>
+</section>
+
+<section class="feature">
+  <figure class="phone"><img src="img/rate.jpg" width="600" height="1304" alt="Rating a ride: four and a half stars, tags such as Smooth ride and Secure seat, and an optional note." loading="lazy"></figure>
+  <div>
+    <h2>Rate a ride in seconds</h2>
+    <p>When you dock, give the bike stars and a couple of tags like “Smooth ride” or “Weak brakes”. A note is optional. The next time you scan that bike, you’ll see what you thought of it.</p>
+  </div>
+</section>
+
+<section class="feature flip">
+  <figure class="phone"><img src="img/bikes.jpg" width="600" height="1304" alt="The Journal’s Bikes view: every bike you’ve ridden, sorted best rated first, with classic and e-bike filters." loading="lazy"></figure>
+  <div>
+    <h2>Remember the good ones</h2>
+    <p>Every bike you’ve ridden, best first. Filter by classic or e-bike, see the ones to avoid, and find where a bike you liked was last docked.</p>
+  </div>
+</section>
+
+<section class="feature">
+  <figure class="phone"><img src="img/destination.jpg" width="600" height="1304" alt="Where to? Home, Work and a favorite station, each with its open docks." loading="lazy"></figure>
+  <div>
+    <h2>Never arrive to a full station</h2>
+    <p>Label stations Home and Work. Pick where you’re going and Pedals tells you if it runs out of open docks while you ride.</p>
+  </div>
+</section>
+
+<section class="private">
+  <h2>Private by design</h2>
+  <p>Your journal stays on your phone. No account, no ads, no tracking. Sharing ratings with other riders is optional, anonymous, and never includes your notes. <a href="privacy.html">Privacy policy</a></p>
+</section>
+
+<section id="android" class="testing">
+  <h2>Test Pedals on Android</h2>
+  <p>Pedals for Android is in a closed test before its public release. On your Android phone, signed in with the Google account you use for the Play Store:</p>
+  <ol class="steps">
+    <li><strong>Join the tester group.</strong> <a href="https://groups.google.com/g/pedals-tester">groups.google.com/g/pedals-tester</a></li>
+    <li><strong>Become a tester.</strong> Open <a href="https://play.google.com/apps/testing/app.cytybyke.journal">the test page</a> and tap Become a tester.</li>
+    <li><strong>Install Pedals</strong> from the Play Store link on that page. It can take a few minutes to appear after you join.</li>
+    <li><strong>Keep it installed for 14 days.</strong> Using it on a ride or two is plenty.</li>
+  </ol>
+  <p class="muted">Found a bug? Email <a href="mailto:pedals@kyuhunl.ee">pedals@kyuhunl.ee</a> and attach the file from Settings → Save troubleshooting log.</p>
+</section>
+
+<footer class="muted">
+  <p><a href="support.html">Help and feedback</a> · <a href="privacy.html">Privacy policy</a></p>
+  <p>Pedals is an independent app. It isn’t affiliated with or endorsed by Citi Bike, Lyft or Motivate. Citi Bike is a trademark of its owners.</p>
+</footer>
 </main>
 </body>
 </html>
