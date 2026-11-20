@@ -11,7 +11,7 @@
 <main>
 <header><img src="icon.png" alt=""><a href="./">Pedals</a></header>
 <h1>Privacy policy</h1>
-<p class="muted">Effective November 9, 2026</p>
+<p class="muted">Effective November 14, 2026</p>
 <p>Pedals is a ride journal that keeps your data on your phone. There is no account, no advertising, no analytics and no tracking. This page explains the few things that do leave your phone, and why.</p>
 
 <h2>What stays on your phone</h2>
@@ -22,6 +22,7 @@
 <li>A troubleshooting log of app events, which never includes bike numbers, QR codes, links or notes.</li>
 </ul>
 <p>Nothing here is sent to us. If you export a backup or save the troubleshooting log, the file goes wherever you choose to save or share it.</p>
+<p>If your phone’s own backup is turned on (iCloud Backup on iPhone, Google’s backup on Android), it can include your journal, stored under your Apple or Google account. We can’t see those backups.</p>
 
 <h2>Camera</h2>
 <p>The camera reads bike QR codes and, if you ask, the printed bike number. Images are processed on your phone and not saved or sent anywhere.</p>
@@ -37,7 +38,7 @@
 <li><strong>Bike share system data</strong> (gbfs.lyft.com): station lists and live bike and dock counts. No personal information is sent.</li>
 <li><strong>Bike pages</strong> (citibikenyc.com): for bikes you scanned or rated, Pedals opens the bike’s public page by its QR code to find its number and where it’s docked, the same page your camera opens when you scan the label. Lyft’s privacy policy applies to those requests.</li>
 <li><strong>Map tiles</strong> (tiles.openfreemap.org): map images for the area on screen.</li>
-<li><strong>Community ratings</strong>, only if you turn on sharing: for each shared rating, the bike number, stars, tags and the week of the ride, under an anonymous ID created for this install. Notes and ride times are never shared. Shared ratings are stored with Supabase. You can withdraw all of them in Settings; reinstalling the app creates a new anonymous ID, and restoring a journal backup moves your shared ratings to it.</li>
+<li><strong>Community ratings</strong>, only if you turn on sharing: for each shared rating, the bike number, stars, tags and the week of the ride, under an anonymous ID created for this install. Notes and ride times are never shared. Shared ratings are stored with Supabase. You can withdraw all of them in Settings; reinstalling the app creates a new anonymous ID, and restoring a journal backup moves your shared ratings to it. If an install doesn’t use community ratings for a year, its anonymous ID and shared ratings are deleted. With that ID the server keeps only the day you first shared, how many days you’ve shared on, and the last day the app used community ratings, to apply limits and the one-year rule.</li>
 <li><strong>Bike locations</strong>, only if you turn on sharing: when a ride ends, the bike number, its QR code, and the station where its public page shows it docked, with the time rounded to 15 minutes, so other riders can find well-rated bikes. When you open a station where other riders reported a bike, Pedals checks that bike’s public page and reports what it shows the same way. These reports aren’t stored with your anonymous ID or anything else about you, so they can’t be withdrawn. Each bike keeps only its latest location, and locations are deleted after a week.</li>
 </ul>
 <p>Like any internet request, these services may see your IP address. Pedals doesn’t sell or share data with anyone else.</p>
@@ -46,7 +47,7 @@
 <p>Pedals isn’t directed at children under 13 and doesn’t knowingly collect their information.</p>
 
 <h2>Your choices</h2>
-<p>You can deny camera, location or notification permissions and keep using the rest of the app. Deleting the app deletes your journal. To remove shared community ratings, use Settings → Community ratings → Withdraw shared ratings.</p>
+<p>You can deny camera, location or notification permissions and keep using the rest of the app. Deleting the app deletes your journal from your phone; if your phone’s backup included it, Android can bring it back when you reinstall, and a new phone restored from that backup will have it. To remove shared community ratings, use Settings → Community ratings → Withdraw shared ratings. Settings → Your data → Erase everything withdraws them and empties the journal on your phone in one step.</p>
 
 <h2>Changes and contact</h2>
 <p>If this policy changes, the new version will be posted here with a new date. Questions: <a href="mailto:pedals@kyuhunl.ee">pedals@kyuhunl.ee</a>.</p>
